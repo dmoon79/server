@@ -1,3 +1,46 @@
 .artist {
   margin: 1em;
 }
+
+h1 {
+  text-align: center;
+}
+
+.col-1-1 {
+  padding: 0;
+}
+.col-1-4 {
+  padding: 0;
+}
+
+.top {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  color: white;
+  background-color: #ccc;
+}
+.ms-row {
+
+}
+
+.box {
+
+}
+
+.box__image {
+
+}
+.box__image img {
+    width: 100%;
+}
+.box__caption {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(255, 0, 0, .5);
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 1em;
+
+}

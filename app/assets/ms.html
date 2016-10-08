@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+  <title>Moon's Quick Sandbox</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="/app.js"></script>
+  <script src="js/ms.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.rawgit.com/winjs/grid/master/dist/css/mscom-grid.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/MicrosoftDotCom/picchu/master/dist/picchu.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>require('initialize');</script>
+</head>
+<body>
+  <!--
+PART 1 - Front-end view
+
+Mockup:
+https://s3.amazonaws.com/f.cl.ly/items/3a3y0r383S381D2u1B0g/InterviewMockup.png
+
+Grid documentation:
+http://msdotcom.azurewebsites.net/Grid/
+
+Placeholder image:
+https://placeholdit.imgix.net/~text?txtsize=72&txt=768%C3%97768&w=768&h=768
+
+
+
+***************************************
+PART 2 - Back-end data and class creation
+
+
+Write a class to interface with the provided JSON file and can be used to accomplish 4 things.
+
+1 - Show the top 4 home audience ads
+2 - Show the top 4 work audience ads
+3 - Sorted by expiration date, show the 4 ads that are longest from expiration
+4 - Show the ads for a given product family
+
+Business rule - Never show expired ads
+
+Gist to json - https://cdn.rawgit.com/kylezinter/a75e2d1a5a115ae364db8f19b8456e9e/raw/d9f8eef6e8ae3b90d3d5e89b5f2f5793e625fb95/FeatureJson.json
+-->
+
+<section class="ms-grid">
+  <section class="ms-row">
+    <div class="col-1-1">
+      <div class="top">For home</div>
+    </div>
+  </section>
+  <section class="ms-row">
+    <div class="col-1-4">
+      <div class="box" style="">
+        <div class="box__image"><img src="https://placeholdit.imgix.net/~text?txtsize=72&txt=768%C3%97768&w=768&h=768" alt="" /></div>
+        <div class="box__caption">Lorem Lorem ipsum dolor sit.</div>
+      </div>
+    </div>
+    <div class="col-1-4">
+      <div class="box">
+        <div class="box__image"><img src="https://placeholdit.imgix.net/~text?txtsize=72&txt=768%C3%97768&w=768&h=768" alt="" /></div>
+        <div class="box__caption">Lorem ipsum dolor sit amet, consectetur.</div>
+      </div>
+    </div>
+    <div class="col-1-4">
+      <div class="box">
+        <div class="box__image"><img src="https://placeholdit.imgix.net/~text?txtsize=72&txt=768%C3%97768&w=768&h=768" alt="" /></div>
+        <div class="box__caption">Lorem ipsum.</div>
+      </div>
+    </div>
+    <div class="col-1-4">
+      <div class="box">
+        <div class="box__image"><img src="https://placeholdit.imgix.net/~text?txtsize=72&txt=768%C3%97768&w=768&h=768" alt="" /></div>
+        <div class="box__caption">Lorem ipsum dolor sit amet.</div>
+      </div>
+    </div>
+  </section>
+</section>
+</body>
+</html>
